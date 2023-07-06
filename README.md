@@ -1,0 +1,7 @@
+# Viewsonic_Technical_Interview
+
+Q1 可改為
+https://stackoverflow.com/questions/48732133/data-missing-fill-nan-with-addition-of-10?
+for i in range(1, df['FlightNumber'].count() + 1):
+      if pd.isnull(df.loc[i,'FlightNumber']):
+          df.loc[i, 'FlightNumber'] = df.loc[i-1, 'FlightNumber'] + 10
